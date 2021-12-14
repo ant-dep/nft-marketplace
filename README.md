@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<h1>Web 3.0 NFT MarketPlace</h1>
+</br></br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+👇 <em>Result here</em>👇 </br>
+https://nft-marketplace-e0a3d.web.app
 
-## Available Scripts
+</br></br></br>
 
-In the project directory, you can run:
+<h2>FRONTEND</h2></br>
 
-### `yarn start`
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MJj0GQDG--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/5087/a22e0f35-f97b-4315-b0ca-7574cb45b73d.png" width="100" alt="ThirdWeb logo"> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_wordmark.png&f=1&nofb=1" width="200" alt="React.js logo"></br></br></br></br></br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2>BACKEND</h2></br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://i0.wp.com/artplugged.co.uk/wp-content/uploads/2021/07/Opensea_NFT-marketplace-OpenSea-raises-100M-at-1.5B-valuation_art_plugged.jpg?fit=1384%2C821&ssl=1" width="150" alt="Opensea logo"> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fappdevcon.nl%2Fwp-content%2Fuploads%2F2019%2F02%2Flogo_lockup_firebase_horizontal.png&f=1&nofb=1" width="200" alt="Firebase logo"></br></br></br></br></br></br>
 
-### `yarn test`
+<hr class="line"></br></br></br></br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>Features</h2></br>
 
-### `yarn build`
+👉 <em>React</em></br>
+👉 <em>Thirdweb</em> NFT minting</br>
+👉 <em>OpenSea</em> API request</br>
+👉 <em>Firebase</em> hosting
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</br></br></br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<hr class="line"></br></br></br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://github.com/lHimiko/nft-marketplace/blob/main/src/assets/preview.png?raw=true" width="1000" alt="Preview">
