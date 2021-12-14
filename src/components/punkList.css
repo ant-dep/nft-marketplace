@@ -1,0 +1,22 @@
+.punkList {
+  cursor: pointer;
+  display: flex;
+  overflow: scroll;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid white;
+  scroll-behavior: smooth;
+}
+
+.punkList::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .punkList {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,204 @@
+.main {
+  max-height: 50vh;
+}
+
+.mainContent {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fff;
+  margin: 5em 0;
+}
+
+.punkHighlight {
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.punkContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  margin-right: 20px;
+}
+
+.selectedPunk {
+  object-fit: contain;
+  max-width: min(25vw, 35vh);
+  max-height: 25vw;
+}
+.punkDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0.75;
+}
+
+.title {
+  font-size: 6vw;
+  font-weight: 800;
+}
+
+.itemNumber {
+  color: #a1a5b0;
+  font-size: 3vw;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.bidButtonContainer {
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  padding: 15px 40px;
+  border-radius: 50px;
+  width: 15%;
+  min-width: 125px;
+}
+
+.bidButtonContainer a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #111;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+
+.bidButtonContainer:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 20px white;
+  cursor: pointer;
+}
+
+.owner {
+  display: flex;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.owner > div {
+  margin: 0 5px;
+}
+
+.ownerImageContainer {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.ownerImageContainer > img {
+  height: 100%;
+  width: 100%;
+}
+
+.ownerDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.ownerDetails > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.ownerNameAndHandle {
+  flex: 1;
+}
+
+.ownerHandle {
+  color: #00ebfe;
+}
+
+.ownerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ownerLinks div {
+  padding: 12px;
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  margin: 0 0 0 10px;
+  transition: all 600ms;
+}
+
+.ownerLinks div:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.ownerLinks div > img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-height: 100vh;
+  }
+
+  .mainContent {
+    margin: 0;
+    flex-direction: column-reverse;
+    height: 80vh;
+    width: 100%;
+  }
+
+  .punkHighlight {
+    flex: 0.8;
+  }
+
+  .punkDetails {
+    flex: 0.2;
+  }
+
+  .selectedPunk {
+    max-height: none;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .punkDetails {
+    align-items: center;
+  }
+
+  .punkDetails > div {
+    margin: 1em 0;
+  }
+
+  .title {
+    font-size: 15vw;
+  }
+
+  .itemNumber {
+    font-size: 10vw;
+  }
+
+  .ownerDetails {
+    align-items: center;
+  }
+
+  .ownerLinks > div {
+    width: 20px;
+    height: 20px;
+  }
+}
