@@ -48,7 +48,7 @@ const Main = ({ selectedPunk, punkListData }) => {
             <div className="ownerDetails">
               <a
                 href={`https://testnets.opensea.io/${activePunk.creator.user.username}`}
-                className="ownernameAndHandle"
+                className="ownerNameAndHandle"
               >
                 <p>{`${activePunk.creator.address.substring(0, 20)}...`}</p>
                 <p className="ownerHandle">

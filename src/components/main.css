@@ -120,6 +120,10 @@
   flex: 1;
 }
 
+.ownerHandle:hover {
+  transform: scale(1.01);
+}
+
 .ownerHandle {
   color: #00ebfe;
 }
