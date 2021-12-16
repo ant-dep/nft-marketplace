@@ -3,9 +3,14 @@
   background-color: #1a1c1e;
   border-radius: 20px;
   overflow: hidden;
-  width: 15vw;
+  width: 17vw;
   min-width: 200px;
-  margin-right: 30px;
+  margin-right: 10px;
+}
+
+.collectionCard:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
 }
 
 .details {

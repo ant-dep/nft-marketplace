@@ -4,7 +4,7 @@
 
 .mainContent {
   display: flex;
-  padding-bottom: 40px;
+  padding: 0 20px 60px 20px;
   border-bottom: 1px solid #fff;
   margin: 5em 0;
 }
@@ -69,7 +69,7 @@
 
 .priceContainer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
 }
@@ -164,6 +164,7 @@
     flex-direction: column-reverse;
     height: 80vh;
     width: 100%;
+    padding: 0 0 60px 0;
   }
 
   .punkHighlight {

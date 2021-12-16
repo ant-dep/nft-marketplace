@@ -2,10 +2,13 @@
   cursor: pointer;
   display: flex;
   overflow: scroll;
-  margin-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   border-bottom: 1px solid white;
   scroll-behavior: smooth;
+}
+
+.punkCard {
+  padding: 20px;
 }
 
 .punkList::-webkit-scrollbar {

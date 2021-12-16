@@ -7,6 +7,8 @@ const PunkList = ({ punkListData, setSelectedPunk }) => {
     <div className="punkList">
       {punkListData.map((punk) => (
         <div
+          className="punkCard"
+          key={punk.token_id}
           onClick={() => {
             setSelectedPunk(punk.token_id);
             window.scrollTo(0, 0);

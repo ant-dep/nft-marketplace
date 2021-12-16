@@ -8,6 +8,15 @@ import weth from "../assets/weth.png";
 const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
 
+  let creatorAddress = activePunk?.creator?.address;
+  let shortAddress = `${creatorAddress?.substring(
+    0,
+    4
+  )}...${creatorAddress?.substring(
+    creatorAddress?.length,
+    creatorAddress?.length - 3
+  )}`;
+
   useEffect(() => {
     setActivePunk(punkListData[selectedPunk]);
   }, [punkListData, selectedPunk]);
@@ -50,7 +59,7 @@ const Main = ({ selectedPunk, punkListData }) => {
                 href={`https://testnets.opensea.io/${activePunk.creator.user.username}`}
                 className="ownerNameAndHandle"
               >
-                <p>{`${activePunk.creator.address.substring(0, 20)}...`}</p>
+                <p>{shortAddress}</p>
                 <p className="ownerHandle">
                   @{activePunk.creator.user.username}
                 </p>
