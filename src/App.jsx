@@ -12,7 +12,8 @@ function App() {
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0xd32560e746Dadea82466A5eCDFb54dAe036d0289&order_direction=asc"
+        // redirect to personal proxy that set CORS headers and return response.
+        "https://proxy-cors-ap.herokuapp.com/https://testnets-api.opensea.io/assets?asset_contract_address=0xd32560e746Dadea82466A5eCDFb54dAe036d0289&order_direction=asc"
       );
       console.log(openseaData.data);
       setPunkListData(openseaData.data.assets);
