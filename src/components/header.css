@@ -180,6 +180,8 @@ ul#nav li a:active {
     height: 30%;
     width: 100%;
     justify-content: flex-start;
+    padding: 0;
+    margin: 0;
   }
 
   .searchBar {

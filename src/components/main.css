@@ -36,7 +36,7 @@
 }
 
 .title {
-  font-size: 6vw;
+  font-size: 5em;
   font-weight: 800;
 }
 
@@ -154,7 +154,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .main {
     max-height: 100vh;
   }
@@ -182,6 +182,11 @@
     border-radius: 20px;
   }
 
+  .punkContainer {
+    margin: 0;
+    width: 100%;
+  }
+
   .punkDetails {
     align-items: center;
   }
@@ -191,7 +196,7 @@
   }
 
   .title {
-    font-size: 15vw;
+    padding-left: 0.5em;
   }
 
   .itemNumber {
