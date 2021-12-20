@@ -29,24 +29,28 @@ const Header = () => {
   }, [isAuthenticated, user]);
 
   return (
-    <div className="header">
-      <div className="wrap-top">
-        <div className="logoContainer">
-          <img src={punkLogo} alt="punkLogo" className="punkLogo" />
-        </div>
-        <div className="searchBar">
-          <div className="searchIconContainer">
-            <SearchIcon />
-          </div>
-          <input
-            type="text"
-            className="searchInput"
-            placeholder="Collection, item or user..."
-          />
-        </div>
+    <div id="home" className="header">
+      <div className="logoContainer">
+        <img src={punkLogo} alt="punkLogo" className="punkLogo" />
       </div>
-      <nav className="wrap">
-        <ul className="headerItems">
+      <div className="searchBar">
+        <div className="searchIconContainer">
+          <SearchIcon />
+        </div>
+        <input
+          type="text"
+          className="searchInput"
+          placeholder="Collection, item or user..."
+        />
+      </div>
+      <nav id="nav-wrap">
+        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+          Show navigation
+        </a>
+        <a className="mobile-btn" href="#home" title="Hide navigation">
+          Hide navigation
+        </a>
+        <ul id="nav" className="nav">
           <li>
             <a href="/">Drops</a>
           </li>
@@ -54,32 +58,33 @@ const Header = () => {
             <a href="/">Marketplace</a>
           </li>
           <li>
-            <a href="https://web3-chat-chi.vercel.app/">Web 3.0 Chat</a>
+            <a href="https://dapp-chat.vercel.app">Dapp Chat</a>
+          </li>
+          <li className="headerActions">
+            <div
+              onClick={() => {
+                if (darkMode) {
+                  setDarkMode(false);
+                } else {
+                  setDarkMode(true);
+                }
+              }}
+              className="themeSwitchContainer"
+            >
+              {darkMode ? <LightModeIcon /> : <NightlightIcon />}
+            </div>
+          </li>
+          <li className="userContainer">
+            {user && <a href="/">{shortAddress}</a>}
+          </li>
+          <li className="loginButton">
+            {!isAuthenticated ? (
+              <p onClick={authenticate}>GET IN</p>
+            ) : (
+              <LogoutIcon onClick={logout} />
+            )}
           </li>
         </ul>
-
-        <div className="headerActions">
-          <div
-            onClick={() => {
-              if (darkMode) {
-                setDarkMode(false);
-              } else {
-                setDarkMode(true);
-              }
-            }}
-            className="themeSwitchContainer"
-          >
-            {darkMode ? <LightModeIcon /> : <NightlightIcon />}
-          </div>
-        </div>
-        {user && <div className="userContainer">{<p>{shortAddress}</p>}</div>}
-        <div className="loginButton">
-          {!isAuthenticated ? (
-            <p onClick={authenticate}>GET IN</p>
-          ) : (
-            <LogoutIcon onClick={logout} />
-          )}
-        </div>
       </nav>
     </div>
   );
