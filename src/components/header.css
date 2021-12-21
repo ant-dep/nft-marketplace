@@ -19,7 +19,7 @@
 .searchBar {
   background-color: #1c1c1e;
   height: 50px;
-  flex: 1;
+  flex: 0.5;
   display: flex;
   border-radius: 50px;
   align-items: center;
@@ -54,9 +54,10 @@
 
 /* nav-wrap */
 #nav-wrap {
-  flex: 1;
+  flex: 0.5;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  font-size: 12px;
+  letter-spacing: 1px;
   margin: 0 auto;
   z-index: 100;
 }
@@ -78,7 +79,6 @@ ul#nav {
 }
 ul#nav li {
   list-style: none;
-  height: 48px;
   display: inline-block;
 }
 
@@ -86,19 +86,21 @@ ul#nav li {
 ul#nav li a {
   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
-  display: inline-block;
-  padding: 8px 13px;
-  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  line-height: 25px;
   text-decoration: none;
   text-align: left;
   font-weight: 600;
   color: #a1a5b0;
 
-  -webkit-transition: color 0.2s ease-in-out;
-  -moz-transition: color 0.2s ease-in-out;
-  -o-transition: color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 ul#nav li div {
@@ -115,7 +117,7 @@ ul#nav li a:hover {
 }
 
 ul#nav li a:active {
-  background-color: transparent !important;
+  transform: scale(0.98);
 }
 
 .headerActions {
@@ -145,33 +147,34 @@ ul#nav li a:active {
   text-align: center;
 }
 
-.loginButton {
+#loginButton {
   background: linear-gradient(to right, #59f9b7, #66feea);
   border-radius: 10px;
-  transition: box-shadow 400ms;
+  transition: box-shadow 300ms;
 }
 
-.loginButton p {
+#loginButton p {
   padding: 15px 20px;
   color: #000;
   font-weight: 600;
   transition: text-shadow 200ms;
 }
 
-.loginButton svg {
+#loginButton svg {
   color: #000;
   padding: 10px;
 }
 
-.loginButton:hover {
+#loginButton:hover {
   box-shadow: 1px -1px 15px white;
+  cursor: pointer;
 }
 
-.loginButton:active {
+#loginButton:active {
   transform: scale(0.98);
 }
 
-.loginButton:hover p {
+#loginButton:hover p {
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 }
 
@@ -274,14 +277,24 @@ ul#nav li a:active {
     border: none;
   }
 
-  .headerActions > div,
-  .loginButton {
+  #loginButton {
+    display: flex !important;
+    justify-content: center;
     border-radius: 0;
-    width: 100%;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headerActions {
+    padding: 0;
+    margin: 0;
   }
 
   .headerActions > div {
+    border-radius: 0;
+    width: 100%;
     padding: 10px 0;
+    margin: 0;
+    text-align: center;
   }
 }

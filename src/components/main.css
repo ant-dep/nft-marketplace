@@ -53,6 +53,7 @@
   border-radius: 10px;
   width: 15%;
   min-width: 125px;
+  transition: box-shadow 300ms;
 }
 
 .bidButtonContainer a {
@@ -75,9 +76,12 @@
 }
 
 .bidButtonContainer:hover {
-  transform: scale(1.01);
   box-shadow: 1px 1px 20px white;
   cursor: pointer;
+}
+
+.bidButtonContainer:active {
+  transform: scale(0.98);
 }
 
 .owner {

@@ -6,11 +6,16 @@
   width: 17vw;
   min-width: 200px;
   margin-right: 10px;
+  transition: transform 0.3s;
 }
 
 .collectionCard:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
   transform: scale(1.05);
+}
+
+.collectionCard:active {
+  transform: scale(1.03);
 }
 
 .details {

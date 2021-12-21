@@ -77,7 +77,7 @@ const Header = () => {
           <li className="userContainer">
             {user && <a href="/">{shortAddress}</a>}
           </li>
-          <li className="loginButton">
+          <li id="loginButton">
             {!isAuthenticated ? (
               <p onClick={authenticate}>GET IN</p>
             ) : (
