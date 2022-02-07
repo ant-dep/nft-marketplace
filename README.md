@@ -2,7 +2,7 @@
 </br></br>
 
 👇 <em>Result here</em>👇 </br>
-https://nft-marketplace-e0a3d.web.app
+https://nft-marketplace-ant-dep.vercel.app
 
 </br></br></br>
 
@@ -12,7 +12,7 @@ https://nft-marketplace-e0a3d.web.app
 
 <h2>BACKEND</h2></br>
 
-<img src="https://i0.wp.com/artplugged.co.uk/wp-content/uploads/2021/07/Opensea_NFT-marketplace-OpenSea-raises-100M-at-1.5B-valuation_art_plugged.jpg?fit=1384%2C821&ssl=1" width="150" alt="Opensea logo"> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fappdevcon.nl%2Fwp-content%2Fuploads%2F2019%2F02%2Flogo_lockup_firebase_horizontal.png&f=1&nofb=1" width="200" alt="Firebase logo"></br></br></br></br></br></br>
+<img src="https://i0.wp.com/artplugged.co.uk/wp-content/uploads/2021/07/Opensea_NFT-marketplace-OpenSea-raises-100M-at-1.5B-valuation_art_plugged.jpg?fit=1384%2C821&ssl=1" width="185" alt="Opensea logo"> <img src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png" width="200" alt="Vercel logo"></br></br></br></br></br></br>
 
 <hr class="line"></br></br></br></br>
 
@@ -21,10 +21,11 @@ https://nft-marketplace-e0a3d.web.app
 👉 <em>React</em></br>
 👉 <em>Thirdweb</em> NFT minting</br>
 👉 <em>OpenSea</em> API request</br>
-👉 <em>Firebase</em> hosting
+👉 <em>Server Side Rendering</em></br>
+👉 <em>Vercel</em> hosting
 
 </br></br></br>
 
 <hr class="line"></br></br></br>
 
-<img src="https://github.com/lHimiko/nft-marketplace/blob/main/src/assets/preview.png?raw=true" width="1000" alt="Preview">
+<img src="https://github.com/ant-dep/nft-marketplace/blob/main/src/assets/preview.png?raw=true" width="1000" alt="Preview">
