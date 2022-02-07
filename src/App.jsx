@@ -1,30 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import axios from "axios";
 import PunkList from "./components/PunkList";
 import Main from "./components/Main";
 
-function App() {
-  const [punkListData, setPunkListData] = useState([]);
-  const [selectedPunk, setSelectedPunk] = useState(0);
+export async function getServerSideProps() {
+  const punkListData = await axios.get(
+    "https://proxy-cors-ap.herokuapp.com/https://testnets-api.opensea.io/assets?asset_contract_address=0xd32560e746Dadea82466A5eCDFb54dAe036d0289&order_direction=asc"
+  );
+  return {
+    props: {
+      punkListData: punkListData.data.assets,
+    },
+  };
+}
 
-  useEffect(() => {
-    const getMyNfts = async () => {
-      const openseaData = await axios.get(
-        // redirect to personal proxy that set CORS headers and return response.
-        "https://proxy-cors-ap.herokuapp.com/https://testnets-api.opensea.io/assets?asset_contract_address=0xd32560e746Dadea82466A5eCDFb54dAe036d0289&order_direction=asc"
-      );
-      console.log(openseaData.data);
-      setPunkListData(openseaData.data.assets);
-    };
-    return getMyNfts();
-  }, []);
+export default function App({ punkListData }) {
+  const [selectedPunk, setSelectedPunk] = useState(0);
 
   return (
     <div className="app">
       <Header />
-      {punkListData.length > 0 && (
+      {punkListData?.length > 0 ? (
         <>
           <Main punkListData={punkListData} selectedPunk={selectedPunk} />
           <PunkList
@@ -32,9 +30,20 @@ function App() {
             setSelectedPunk={setSelectedPunk}
           />
         </>
+      ) : (
+        <div
+          style={{
+            display: "flex",
+            flex: 1,
+            color: "#737373",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "25%",
+          }}
+        >
+          <p>Loading...</p>
+        </div>
       )}
     </div>
   );
 }
-
-export default App;
