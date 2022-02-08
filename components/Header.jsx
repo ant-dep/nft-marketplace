@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./header.css";
 import punkLogo from "../assets/header/cryptopunk-logo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { useMoralis } from "react-moralis";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -31,7 +32,14 @@ const Header = () => {
   return (
     <div id="home" className="header">
       <div className="logoContainer">
-        <img src={punkLogo} alt="punkLogo" className="punkLogo" />
+        <Image
+          src={punkLogo}
+          alt="punkLogo"
+          className="punkLogo"
+          objectFit="cover"
+          width={150}
+          height={50}
+        />
       </div>
       <div className="searchBar">
         <div className="searchIconContainer">
@@ -52,13 +60,13 @@ const Header = () => {
         </a>
         <ul id="nav" className="nav">
           <li>
-            <a href="/">Drops</a>
+            <Link href="/">Drops</Link>
           </li>
           <li>
-            <a href="/">Marketplace</a>
+            <Link href="/">Marketplace</Link>
           </li>
           <li>
-            <a href="https://dapp-chat.vercel.app">Dapp Chat</a>
+            <Link href="https://dapp-chat.vercel.app">Dapp Chat</Link>
           </li>
           <li className="headerActions">
             <div
@@ -75,7 +83,7 @@ const Header = () => {
             </div>
           </li>
           <li className="userContainer">
-            {user && <a href="/">{shortAddress}</a>}
+            {user && <Link href="/">{shortAddress}</Link>}
           </li>
           <li id="loginButton">
             {!isAuthenticated ? (

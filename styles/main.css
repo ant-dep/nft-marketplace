@@ -52,7 +52,7 @@
   padding: 15px 40px;
   border-radius: 10px;
   width: 15%;
-  min-width: 125px;
+  min-width: 200px;
   transition: box-shadow 300ms;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .ownerHandle:hover {
-  transform: scale(1.01);
+  color: white;
 }
 
 .ownerHandle {
@@ -138,24 +138,19 @@
   justify-content: center;
 }
 
-.ownerLinks div {
-  padding: 12px;
-  height: 2vw;
-  width: 2vw;
+.ownerLinkImage {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
   border-radius: 50px;
   border: 1px solid transparent;
   margin: 0 0 0 10px;
   transition: all 600ms;
 }
 
-.ownerLinks div:hover {
+.ownerLinkImage:hover {
   cursor: pointer;
   border: 1px solid white;
-}
-
-.ownerLinks div > img {
-  height: 100%;
-  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -203,8 +198,8 @@
     align-items: center;
   }
 
-  .ownerLinks > div {
-    width: 20px;
-    height: 20px;
+  .ownerLinkImage {
+    width: 80%;
+    height: 80%;
   }
 }
