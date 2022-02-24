@@ -298,3 +298,18 @@ ul#nav li a:active {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .searchInput {
+    max-width: 100px;
+  }
+  .fullwidth {
+    max-width: 300px;
+  }
+  .cropped {
+    max-width: 150px;
+  }
+  .hidden {
+    display: none;
+  }
+}

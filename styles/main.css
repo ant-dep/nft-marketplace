@@ -203,3 +203,18 @@
     height: 80%;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 3em;
+  }
+
+  .owner {
+    width: 100%;
+    padding: 0 0.25em;
+  }
+
+  .ownerDetails a p {
+    margin: 0.5em;
+  }
+}

@@ -10,6 +10,7 @@ import Link from "next/link";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [hidden, setHidden] = useState(false);
   const [userLogged, setUserLogged] = useState("");
   const { authenticate, isAuthenticated, logout, user } = useMoralis();
 
@@ -31,7 +32,7 @@ const Header = () => {
 
   return (
     <div id="home" className="header">
-      <div className="logoContainer">
+      <div className={`logoContainer ${hidden && "hidden"}`}>
         <Image
           src={punkLogo}
           alt="punkLogo"
@@ -41,14 +42,20 @@ const Header = () => {
           height={50}
         />
       </div>
-      <div className="searchBar">
+      <div className={`searchBar ${hidden ? "fullwidth" : "cropped"}`}>
         <div className="searchIconContainer">
           <SearchIcon />
         </div>
         <input
           type="text"
-          className="searchInput"
+          className={`searchInput ${hidden ? "fullwidth" : "cropped"}`}
           placeholder="Collection, item or user..."
+          onFocus={() => {
+            setHidden(true);
+          }}
+          onBlur={() => {
+            setHidden(false);
+          }}
         />
       </div>
       <nav id="nav-wrap">

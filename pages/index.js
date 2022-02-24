@@ -7,17 +7,18 @@ import Main from "../components/Main";
 
 export async function getServerSideProps() {
   const punkListData = await axios.get(
-    "https://testnets-api.opensea.io/assets?asset_contract_address=0xd32560e746Dadea82466A5eCDFb54dAe036d0289&order_direction=asc"
+    "https://testnets-api.opensea.io/assets?asset_contract_address=0xd32560e746Dadea82466A5eCDFb54dAe036d0289"
   );
 
   return {
     props: {
-      punkListData: punkListData?.data?.assets,
+      punkListData: punkListData?.data?.assets.reverse(),
     },
   };
 }
 
 export default function Home({ punkListData }) {
+  console.log(punkListData);
   const [selectedPunk, setSelectedPunk] = useState(0);
 
   return (
