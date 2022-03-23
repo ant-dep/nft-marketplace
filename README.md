@@ -28,4 +28,4 @@ https://nft-marketplace-ant-dep.vercel.app
 
 <hr class="line"></br></br></br>
 
-<img src="https://github.com/ant-dep/nft-marketplace/blob/main/src/assets/preview.png?raw=true" width="1000" alt="Preview">
+<img src="https://github.com/ant-dep/nft-marketplace/blob/main/assets/preview.png?raw=true" width="1000" alt="Preview">
